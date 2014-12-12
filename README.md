@@ -1,5 +1,10 @@
 # ng-config
 
+[![Build Status][travis-image]][travis-url]
+
+[travis-url]: https://travis-ci.org/tlvince/ng-config
+[travis-image]: https://travis-ci.org/tlvince/ng-config.svg?branch=master
+
 > Generate Angular constants from POJO
 
 ## Author
