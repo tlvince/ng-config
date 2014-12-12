@@ -1,0 +1,25 @@
+{
+  "name": "ng-config",
+  "version": "1.0.0",
+  "description": "Generate Angular constants from POJO",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "watch": "mocha --watch"
+  },
+  "keywords": [
+    "angular",
+    "constant"
+  ],
+  "author": "Tom Vincent <npm@tlvince.com> (http://tlvince.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^0.10.1",
+    "mocha": "^2.0.1",
+    "should": "^4.4.0"
+  },
+  "dependencies": {
+    "extend": "^2.0.0",
+    "microtemplates": "^0.1.0"
+  }
+}
