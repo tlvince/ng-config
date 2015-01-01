@@ -34,8 +34,8 @@ console.log(config);
 fs.writeFileSync('app/config.js', config);
 ```
 
-The module name and template are customisable. See the source the current
-defaults.
+The module name and template are customisable. See the source for the
+current defaults.
 
 ## See also
 
