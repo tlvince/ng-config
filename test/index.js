@@ -5,7 +5,7 @@ var ngConfig = require('../');
 describe('ng-config', function() {
   it('return an Angular module as a string', function() {
     var actual = ngConfig();
-    var expected = '\'use strict\';\nangular.module(\'config\', []);\n';
+    var expected = '(function() {\n    \'use strict\';\n\n    angular.module(\'config\');\n\n})();';
     actual.should.equal(expected);
   });
 
@@ -19,6 +19,6 @@ describe('ng-config', function() {
       }
     };
     var actual = ngConfig(options);
-    actual.should.endWith('example.com"});\n');
+    actual.should.endWith('example.com"\n        });\n\n})();');
   });
 });
