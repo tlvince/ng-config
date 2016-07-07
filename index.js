@@ -4,6 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var extend = require('extend');
 var microtemplates = require('microtemplates');
+var beautify = require('js-beautify').js_beautify;
 
 var defaults = {
   module: 'config',
@@ -14,5 +15,5 @@ var defaults = {
 module.exports = function(options) {
   options = extend(defaults, options);
   var tpl = fs.readFileSync(options.template, 'utf-8');
-  return microtemplates(tpl)(options);
+  return beautify(microtemplates(tpl)(options));
 };
